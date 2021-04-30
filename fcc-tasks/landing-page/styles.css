@@ -1,0 +1,241 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: auto;
+}
+body {
+  background-color: #eee;
+  font-family: 'Lato', sans-serif;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  font-weight: inherit;
+  cursor: pointer;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+/* =========Header and Nav =============*/
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+nav ul {
+  display: flex;
+  margin: 20px 0 5px 0;
+}
+
+nav ul.menu {
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul.logo li {
+  font-size: 30px;
+  padding: 2px;
+  font-weight: 700;
+  color: cornflowerblue;
+}
+nav ul.menu li a {
+  padding: 0 2em 0 2em;
+}
+
+/*================= Sign-up Section=========== */
+section.sign-up {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+section.sign-up input {
+  padding: 5px;
+  margin: 20px;
+  width: 40vw;
+}
+
+section.sign-up button {
+  padding: 7px;
+  width: 200px;
+  border: none;
+  outline: none;
+  background-color: cornflowerblue;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+/* ===========Features===================== */
+div.container {
+  width: 80%;
+  margin: 50px auto;
+}
+
+section.features {
+  display: flex;
+  flex-direction: column;
+}
+
+div.feature-item {
+  display: flex;
+  justify-content: space-between;
+}
+div.feature-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: cornflowerblue;
+  font-size: 40px;
+}
+
+div.feature-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60vw;
+  height: 100px;
+}
+
+/* ============Iframe Section============= */
+section.usage {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin: 30px;
+}
+
+/* =============Cards/Grid========== */
+section.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 16px;
+}
+
+section.card-grid div.card {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div.card h3.card-title {
+  background-color: lemonchiffon;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+
+div.card p {
+  text-align: center;
+  padding: 10px;
+}
+
+div.card h3 {
+  text-align: center;
+  padding: 15px;
+}
+
+div.card button {
+  padding: 10px 40px;
+  margin: 10px;
+  font-size: 16px;
+  border: 0;
+  outline: none;
+  background-color: cornflowerblue;
+  color: white;
+}
+
+/* ============Footer============= */
+footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  background-color: lemonchiffon;
+}
+
+footer ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer ul li a {
+  padding: 4px;
+}
+
+footer ul li {
+  margin: 5 15px;
+  font-weight: lighter;
+}
+
+/* ======Media Queries======== */
+@media (max-width: 780px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  nav ul.menu {
+    flex-direction: column;
+  }
+
+  section.sign-up {
+    text-align: center;
+    margin-left: 4em;
+  }
+  section.sign-up input {
+    width: 70vw;
+  }
+
+  div.feature-icon {
+    display: none;
+  }
+
+  div.container {
+    width: 100%;
+  }
+
+  section.features {
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border: 2px solid black;
+  }
+
+  div.feature-info {
+    display: block;
+    width: 100vw;
+  }
+
+  div.feature-info h1 {
+    text-align: center;
+  }
+
+  div.feature-info p {
+    word-wrap: break-word;
+  }
+
+  section.usage {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  section.card-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 80vw;
+    margin: 0 auto;
+  }
+}

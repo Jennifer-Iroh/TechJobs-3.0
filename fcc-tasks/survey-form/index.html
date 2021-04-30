@@ -1,0 +1,137 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 class="brand-name">
+          <span> <a href="https://www.ekobits.academy/"> EKOBITS</a></span>
+          CODING SCHOOL
+        </h1>
+      </header>
+
+      <div class="wrapper">
+        <section class="company-info">
+          <h2>E.C.S</h2>
+          <ul>
+            <li><i class="fa fa-road"></i> 14 Somewhere Str</li>
+            <li><i class="fa fa-phone"></i> (+234) 123 456 789</li>
+            <li><i class="fa fa-envelope"></i>ecs@coding.com</li>
+          </ul>
+        </section>
+
+        <section class="contact">
+          <h3>Please Provide the neccessary Information</h3>
+          <form>
+            <!--Text Input-->
+            <div class="section-one">
+              <div>
+                <label for="fname">First Name</label>
+                <input type="text" name="fname" id="fname" required />
+              </div>
+
+              <div>
+                <label for="lname">Last Name</label>
+                <input type="text" name="lname" id="lname" required />
+              </div>
+
+              <div>
+                <label for="dob">Date of Birth</label>
+                <input type="date" name="dob" id="dob" required />
+              </div>
+
+              <div>
+                <label for="phone">Phone Number</label>
+                <input type="tel" name="phone" id="phone" required />
+              </div>
+
+              <div>
+                <label for="email">Email Address</label>
+                <input type="email" name="email" id="email" required />
+              </div>
+            </div>
+
+            <!--Radio Buttons-->
+            <h3>Select Your Gender</h3>
+            <div class="section-two">
+              <div>
+                <input type="radio" name="gender" id="male" />
+                <label for="male">Male</label>
+              </div>
+
+              <div>
+                <input type="radio" name="gender" id="female" />
+                <label for="male">Female</label>
+              </div>
+            </div>
+
+            <!--Check Boxes-->
+            <h3>Select Your Preferred Language(s)</h3>
+            <div class="section-three">
+              <div>
+                <input type="checkbox" name="javascript" id="javascript" />
+                <label for="javascript">Javascript</label>
+              </div>
+
+              <div>
+                <input type="checkbox" name="java" id="java" />
+                <label for="java">Java</label>
+              </div>
+
+              <div>
+                <input type="checkbox" name="PHP" id="PHP" />
+                <label for="PHP">PHP</label>
+              </div>
+
+              <div>
+                <input type="checkbox" name="python" id="python" />
+                <label for="python">Python</label>
+              </div>
+
+              <div>
+                <input type="checkbox" name="c++" id="c++" />
+                <label for="c++">C++</label>
+              </div>
+
+              <div>
+                <input type="checkbox" name="ruby" id="ruby" />
+                <label for="c++">Ruby</label>
+              </div>
+            </div>
+
+            <!---Select Options-->
+            <h3>Select Your Duration of Study</h3>
+            <div class="section-five">
+              <select name="duration" id="duration">
+                <option value="">3 Months</option>
+                <option value="">6 Months</option>
+                <option value="">9 Months</option>
+                <option value="">12 Months</option>
+              </select>
+            </div>
+
+            <!--Text area-->
+            <h3>Additional Info</h3>
+            <div class="full">
+              <textarea
+                name="info"
+                id="info"
+                rows="10"
+                placeholder="Enter your message here"
+              ></textarea>
+            </div>
+
+            <div class="full">
+              <button>Submit</button>
+            </div>
+          </form>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

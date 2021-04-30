@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+  letter-spacing: 1;
+  scroll-behavior: smooth;
+  background-color: rgba(197, 150, 197, 0.5);
+  color: rgb(85, 85, 192);
+}
+
+nav {
+  min-width: 300px;
+  width: 350px;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  border-right: solid black;
+}
+
+nav ul {
+  /* margin-right: 2em;
+    margin-left: 0; */
+  height: 90%;
+  padding: 0;
+  /* border-right: 2px solid grey;
+    border-left: 2px solid grey; */
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+nav ul li {
+  position: relative;
+  list-style-type: none;
+  width: 100%;
+  border-top: 1px solid black;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  padding: 0.8em 2em;
+  cursor: pointer;
+}
+
+header,
+article h3 {
+  margin: 1em;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+.content {
+  position: absolute;
+  margin-left: 350px;
+  padding: 20px;
+  margin-bottom: 120px;
+}
+
+code {
+  display: block;
+  text-align: left;
+  white-space: pre-line;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  background-color: #f7f7f7;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center;
+  padding: 0.5em;
+  margin-top: 1em;
+  background-color: rebeccapurple;
+  color: whitesmoke;
+}
+
+@media only screen and (max-width: 680px) {
+  nav {
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 250px;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid;
+  }
+
+  .content {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 250px;
+    left: 0;
+  }
+
+  nav ul {
+    height: 200px;
+  }
+
+  code {
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    margin: 0;
+    padding: 0.2em;
+    font-size: 1.2em;
+  }
+}

@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #222;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+}
+
+a {
+  text-decoration: none;
+  margin: 5px;
+  color: #222;
+  font-size: 0.95em;
+}
+
+a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+nav ul.nav-content {
+  display: flex;
+  align-items: center;
+}
+
+nav ul img,
+nav ul a {
+  margin: 10px;
+}
+
+nav ul img:hover {
+  cursor: pointer;
+  box-shadow: 0 0 4px gainsboro;
+  border-radius: 50%;
+}
+
+nav ul img#profile-img {
+  width: 30px;
+  border-radius: 50%;
+}
+
+section.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+}
+
+section.container .logo {
+  width: 300px;
+}
+
+div.search {
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+  border: 1px solid gainsboro;
+  border-radius: 20px;
+  height: 40px;
+}
+
+div.search input {
+  flex-grow: 1;
+  border: none;
+  outline: none;
+}
+
+div.search:hover,
+div.search:focus {
+  box-shadow: 0 0 10px gainsboro;
+}
+
+div.buttons {
+  display: flex;
+}
+
+.buttons button {
+  margin: 25px 1px 5px 10px;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+.buttons button:hover {
+  box-shadow: 0 0 4px gainsboro;
+  border: 1px solid #f8f9fa;
+  cursor: pointer;
+}
+
+div.options {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+}
+
+div.options a {
+  color: #1a0dbe;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  background-color: #f2f2f2;
+  color: #707b8a;
+}
+footer a {
+  color: #707b8a;
+}
+
+footer div.location,
+footer div.utilities {
+  padding: 15px;
+}
+
+footer .utilities {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div.utilities ul a {
+  margin: 10px;
+}
+
+footer .footer-img {
+  width: 15px;
+}
+
+/* Media queries */
+@media (max-width: 650px) {
+  section.container {
+    height: 50vh;
+    font-size: 0.7rem;
+  }
+
+  section.container .logo {
+    width: 200px;
+  }
+
+  section.container .search {
+    width: 80vw;
+  }
+
+  div.options {
+    width: 70vw;
+  }
+}
