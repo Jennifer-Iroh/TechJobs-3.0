@@ -20,4 +20,4 @@ let people = ["Greg", "Mary", "Devon", "James"];
 
 * Answer:
   
-[JS file containing code solutions](array-exercise.js)
+[JS file containing code solutions](exercise1.js)
